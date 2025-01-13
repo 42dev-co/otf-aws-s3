@@ -1,0 +1,4 @@
+.terraform
+*.tfstate
+tmp/*
+!tmp/.gitkeep

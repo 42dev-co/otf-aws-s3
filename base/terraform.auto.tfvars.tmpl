@@ -1,0 +1,12 @@
+region="{{ .REGION }}"
+group="{{ .GROUP }}"
+domain="{{ .DOMAIN }}"
+default_tags={
+  opentofu = "true"
+  module = "otf-iac-aws-s3"
+  group = "{{ .GROUP }}"
+  account = "{{ .ACCOUNT }}"
+  domain = "{{ .DOMAIN }}"
+  suffix = ".{{ .GROUP }}.{{ .ACCOUNT }}.{{ .DOMAIN }}"
+}
+account="{{ .ACCOUNT }}"
