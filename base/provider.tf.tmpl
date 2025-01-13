@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "iac.42dev.co"
+    bucket = "<replace with your bucket>"
     key    = "{{ .KEY_PATH }}/state.tfstate"
     region = "ap-southeast-1"
     profile = "devops"
